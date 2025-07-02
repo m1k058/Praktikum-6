@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=Raumkategorie
 comment0.text=\r\n\ Repraesentationen\ fuer\ alle\ kategorien\ der\ R\u00E4ume,\r\n\ zusammen\ mit\ einer\ Zeichenkette\ und\ einem\ bau\ limit.\r\n\ \r\n\ @author\ \ Michal\ Kos\r\n\ @version\ 23.05.2025\r\n
-comment1.params=kategorie\ solar\ wind
-comment1.target=Raumkategorie(java.lang.String,\ int,\ int)
+comment1.params=kategorie\ solar\ wind\ imageFile
+comment1.target=Raumkategorie(java.lang.String,\ int,\ int,\ java.lang.String)
 comment1.text=\r\n\ Initialisieren\ mit\ der\ entsprechenden\ Raumkategorie.\r\n\ @param\ kategorie\ des\ Raums\ als\ Zeichenkette\ und\ anzahl\ der\ plazierbaren\r\n\ Solar\ und\ Windanlagen.\r\n
 comment2.params=
 comment2.target=java.lang.String\ gibBeschreibung()
@@ -13,4 +13,7 @@ comment3.text=\r\n\ Gibt\ die\ erlaubte\ anzahl\ von\ Solaranlagen\ f\u00FCr\ de
 comment4.params=
 comment4.target=int\ maxWind()
 comment4.text=\r\n\ Gibt\ die\ erlaubte\ anzahl\ von\ Windanlagen\ f\u00FCr\ den\ Raum.\r\n\r\n\ @return\ \ \ \ max\ Anzahl\ Windanlage\r\n
-numComments=5
+comment5.params=
+comment5.target=java.lang.String\ getImageFile()
+comment5.text=\r\n\ Gibt\ String\ mit\ Bilddatei\ f\u00FCr\ die\ entsprechende\ Kategorie\ zur\u00FCck.\r\n\r\n\ @return\ \ \ \ String\ mit\ Bilddatei\r\n
+numComments=6

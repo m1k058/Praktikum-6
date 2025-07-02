@@ -1,9 +1,9 @@
 import javax.swing.ImageIcon;
 
-public class BildRaum extends Raum {
+public class BildTravelRaum extends TravelRaum {
     private final ImageIcon image;
 
-    public BildRaum(Raumkategorie kategorie) {
+    public BildTravelRaum(Raumkategorie kategorie) {
         super(kategorie);
         this.image = new ImageIcon(kategorie.getImageFile());
     }

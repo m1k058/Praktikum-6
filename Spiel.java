@@ -31,6 +31,9 @@ class Spiel
     private int einkommenMultiplikator; // Faktor, der das Einkommen pro Reise bestimmt. Erhöht sich durch den Bau von Anlagen.
     private int punkte; // Aktuelle Punktzahl des Spielers.
     private int zugfahrtenCount;    // Zählt die Anzahl der Reisen, um eine Spielzeitbegrenzung zu implementieren.
+    
+    // GUI-Referenz, um Bild nach Raumwechsel zu aktualisieren
+    private SpielGUI gui;
 
      /**
      * Erzeugt ein neues Spiel und initialisiert die interne Raumkarte sowie den Spieler.
@@ -38,6 +41,7 @@ class Spiel
      */
     public Spiel() 
     {
+        
         spieler = new Spieler(5);
         parser = new Parser();
         try {
@@ -56,6 +60,15 @@ class Spiel
         gesamtWindanlagen = 0;
         punkte = 0;
         zugfahrtenCount = 0;
+        
+        
+    }
+    
+    private void setGui(SpielGUI gui) {
+        this.gui = gui;
+        if (this.gui != null && aktuellerRaum != null) {
+            this.gui.aktualisiereBild(aktuellerRaum);
+        }
     }
 
     /**
@@ -65,6 +78,10 @@ class Spiel
      */
     public void spielen() 
     {            
+        // Initialisierung der GUI
+        SpielGUI gui = new SpielGUI();
+        setGui(gui);
+        
         willkommenstextAusgeben();
 
         // Die Hauptschleife. Hier lesen wir wiederholt Befehle ein
@@ -233,6 +250,7 @@ class Spiel
         } else {
             aktuellerRaum = naechsterRaum;
             raumInfoAusgeben();
+            if (gui != null) gui.aktualisiereBild(aktuellerRaum);
         }
     }
 
@@ -283,6 +301,7 @@ class Spiel
                 spieler.aendereGeld(einkommenMultiplikator);
                 zugfahrtenCount +=1;
                 raumInfoAusgeben();
+                if (gui != null) gui.aktualisiereBild(aktuellerRaum);
             }
             else {
                 System.out.println("Reise fehlgeschlagen. Du bleibst in " + alteRegion.gibBeschreibung() + ".");

@@ -9,39 +9,41 @@
 public enum Raumkategorie
 {
     // Ein Wert fuer jedes Raumkategorie
-    MARKTPLATZ("am Marktplatz", 0, 0),
+    MARKTPLATZ("am Marktplatz", 0, 0, "marktplatz.png"),
 
-    FELD("auf einem Feld", 1, 2),
+    FELD("auf einem Feld", 1, 2, "feld.png"),
 
-    BAHNHOF("am Bahnhof", 0, 0),
+    BAHNHOF("am Bahnhof", 0, 0, "bahnhof.png"),
 
-    BAUAMT("im Bauamt Gebäude", 0, 0),
+    BAUAMT("im Bauamt Gebäude", 0, 0, "bauamt.png"),
 
-    STRAND("am Strand", 0, 0),
+    STRAND("am Strand", 0, 0, "strand.png"),
 
-    OFFSHORE("am Offshore Baugebiet", 0, 4),
+    OFFSHORE("am Offshore Baugebiet", 0, 4, "offshore.png"),
     
-    BUNDESTAG("im Bundestag", 0, 0),
+    BUNDESTAG("im Bundestag", 0, 0, "bundestag.png"),
 
-    AUTOBAHN("auf der Autobahn", 0, 0);
+    AUTOBAHN("auf der Autobahn", 0, 0, "autobahn.png");
 
     // Das Raumkategorie Beschreibung als Zeichenkette.
     private final String kategorie;
     private final int solar;
     private final int wind;
+    private final String imageFile;
 
     /**
      * Initialisieren mit der entsprechenden Raumkategorie.
      * @param kategorie des Raums als Zeichenkette und anzahl der plazierbaren
      * Solar und Windanlagen.
      */
-    Raumkategorie(String kategorie, int solar, int wind)
+    Raumkategorie(String kategorie, int solar, int wind, String imageFile)
     {
         this.kategorie = kategorie;
         this.solar = solar;
         this.wind = wind;
+        this.imageFile = imageFile;
     }
-
+    
     /**
      * Gibt die Beschreibung der Kategorie aus
      *
@@ -70,6 +72,16 @@ public enum Raumkategorie
     public int maxWind()
     {
         return wind;
+    }
+    
+    /**
+     * Gibt String mit Bilddatei für die entsprechende Kategorie zurück.
+     *
+     * @return    String mit Bilddatei
+     */
+    public String getImageFile()
+    {
+        return imageFile;
     }
 
 }

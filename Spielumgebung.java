@@ -38,13 +38,13 @@ public class Spielumgebung
                 
                 Raum raum;
                 if (kategorie == Raumkategorie.BAHNHOF || kategorie == Raumkategorie.AUTOBAHN) {
-                    raum = new TravelRaum(kategorie);
+                    raum = new BildTravelRaum(kategorie);
                 } 
                 else if (kategorie == Raumkategorie.FELD || kategorie == Raumkategorie.OFFSHORE) {
-                    raum = new BauRaum(kategorie);
+                    raum = new BildBauRaum(kategorie);
                 } 
                 else {
-                    raum = new Raum(kategorie);
+                    raum = new BildRaum(kategorie);
                 } 
                 
                 raeume.put(raumName, raum);
