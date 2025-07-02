@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ItemTyp
+comment0.text=\r\n\ Repraesentationen\ fuer\ alle\ Items\ im\ Inventar,\r\n\ zusammen\ mit\ einer\ Zeichenkette\ f\u00FCr\ den\ Namen\ und\ eine\ Beschreibung.\r\n\ \r\n\ @author\ \ Michal\ Kos\r\n\ @version\ 04.06.2025\r\n
+comment1.params=anzeigename\ beschreibung
+comment1.target=ItemTyp(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Initialisieren\ mit\ der\ entsprechenden\ \ Namen\ und\ \r\n\ einer\ Beschreibung.\r\n\ @param\ name\ des\ Items\ als\ Zeichenkette\ und\ \r\n\ Beschreibung\ als\ Zeichenkette.\r\n
+comment2.params=
+comment2.target=java.lang.String\ getAnzeigename()
+comment2.text=\r\n\ Gibt\ den\ Namen\ des\ Items\ aus\ \ \ \ \r\n\ @return\ \ \ \ Name\ des\ Items\r\n
+comment3.params=
+comment3.target=java.lang.String\ getBeschreibung()
+comment3.text=\r\n\ Gibt\ die\ Beschreibung\ des\ Items\ aus\r\n\ @return\ \ \ \ Beschreibung\ des\ Items\r\n
+numComments=4

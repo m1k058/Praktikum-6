@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Spielumgebung
+comment0.text=\r\n\ Die\ Spielumgebung\ besteht\ aus\ Regionen\ die\r\n\ miteinander\ verbunden\ sind.\ In\ Dieser\ Klasse\r\n\ wird\ aus\ einer\ .json\ datei\ die\ ganze\ \r\n\ Spielumgebung\ generiert.\r\n\r\n\ @Michal\ Kos\r\n\ @24.05.2025\r\n
+comment1.params=dateipfad
+comment1.target=Spielumgebung(java.lang.String)
+comment2.params=
+comment2.target=java.util.HashMap\ gibRegionenMap()
+comment2.text=\r\n\ Gibt\ die\ HashMap\ aller\ Regionen\ in\ der\ Spielumgebung\ zur\u00FCck\r\n\ @return\ Eine\ HashMap,\ die\ Region-Objekte\ enth\u00E4lt\r\n
+comment3.params=name
+comment3.target=Region\ gibRegion(java.lang.String)
+comment3.text=\r\n\ Gibt\ die\ Region\ mit\ dem\ angegebenen\ Namen\ zur\u00FCck.\r\n\ @param\ name\ Der\ Name\ der\ Region.\r\n\ @return\ Die\ Region\ oder\ null,\ falls\ nicht\ gefunden.\r\n
+numComments=4

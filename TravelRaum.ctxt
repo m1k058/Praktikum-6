@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=TravelRaum
+comment0.text=\r\n\ Die\ Klasse\ TravelRaum\ erweitert\ die\ Klasse\ Raum\ um\r\n\ die\ m\u00F6glichkeit\ aus\ der\ Region\ sich\ rauszubewegen.\ \r\n\ Man\ kann\ \r\n\r\n\ @author\ Michal\ Kos\r\n\ @version\ 23.05.2025\r\n
+comment1.params=kategorie
+comment1.target=TravelRaum(Raumkategorie)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ TravelRaum\r\n
+comment2.params=
+comment2.target=boolean\ zugErlaubt()
+comment2.text=\r\n\ Gibt\ aus\ ob\ der\ Raum\ erlaubt\ Zug\ zu\ fahren\r\n\r\n\ @return\ \ \ \ true\ oder\ false\ \r\n
+comment3.params=
+comment3.target=boolean\ autoErlaubt()
+comment3.text=\r\n\ Gibt\ aus\ ob\ der\ Raum\ erlaubt\ Auto\ zu\ fahren\r\n\r\n\ @return\ \ \ \ true\ oder\ false\ \r\n
+comment4.params=erlaubniss
+comment4.target=void\ erlaubnissZug(boolean)
+comment4.text=\r\n\ \u00E4ndere\ die\ Erlaubniss\ Zug\ zu\ fahren\r\n\r\n\ @param\ \ true\ oder\ false\r\n
+comment5.params=erlaubniss
+comment5.target=void\ erlaubnissAuto(boolean)
+comment5.text=\r\n\ \u00E4ndere\ die\ Erlaubniss\ Auto\ zu\ fahren\r\n\r\n\ @param\ \ true\ oder\ false\r\n
+numComments=6

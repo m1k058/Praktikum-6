@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Spieler
+comment0.text=\r\n\ Repr\u00E4sentiert\ einen\ Spieler\ im\ Spiel\ "Rette\ das\ Neuland".\r\n\ Ein\ Spieler\ verf\u00FCgt\ \u00FCber\ ein\ Inventar,\ in\ dem\ Gegenst\u00E4nde\ und\ auch\r\n\ die\ aktuelle\ Geldmenge\ des\ Spielers\ verwaltet\ werden.\r\n\ @author\ Cedric\ Wilke,\ Michal\ Kos\ \r\n\ @version\ 04.06.2025\r\n
+comment1.params=startGeld
+comment1.target=Spieler(int)
+comment1.text=\r\n\ Erzeugt\ einen\ neuen\ Spieler\ und\ initialisiert\ sein\ Inventar.\r\n\ Der\ Spieler\ startet\ mit\ einem\ festgelegten\ Geldbetrag.\r\n\ *\ @param\ startGeld\ Der\ Geldbetrag,\ mit\ dem\ der\ Spieler\ das\ Spiel\ beginnt.\r\n\ Dieser\ Betrag\ wird\ als\ "M\u00FCnze"-Items\ im\ Inventar\ gespeichert.\r\n
+comment2.params=
+comment2.target=int\ gibGeld()
+comment2.text=\r\n\ Gibt\ die\ aktuelle\ Geldmenge\ des\ Spielers\ zur\u00FCck.\r\n\ *\ @return\ Die\ Anzahl\ der\ "M\u00FCnze"-Items\ im\ Inventar\ des\ Spielers,\r\n\ was\ dem\ Geldbetrag\ entspricht.\r\n
+comment3.params=
+comment3.target=Inventar\ gibSpielerInventar()
+comment3.text=\r\n\ Gibt\ das\ Inventar\ des\ Spielers\ zur\u00FCck.\r\n\ Das\ Inventar\ enth\u00E4lt\ alle\ Gegenst\u00E4nde\ und\ die\ M\u00FCnzen\ des\ Spielers.\r\n\r\n\ @return\ Das\ Inventar-Objekt\ des\ Spielers.\r\n
+comment4.params=aenderung
+comment4.target=void\ aendereGeld(int)
+comment4.text=\r\n\ \u00C4ndert\ die\ Geldmenge\ des\ Spielers\ um\ den\ angegebenen\ Betrag.\r\n\ Eine\ positive\ \u00C4nderung\ erh\u00F6ht\ das\ Geld,\ eine\ negative\ verringert\ es.\r\n\ *\ @param\ aenderung\ Der\ Betrag,\ um\ den\ das\ Geld\ ge\u00E4ndert\ werden\ soll.\r\n\ Kann\ positiv\ (Geld\ erhalten)\ oder\ negativ\ (Geld\ ausgeben)\ sein.\r\n
+numComments=5
